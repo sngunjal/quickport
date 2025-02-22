@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Quickport</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickport - Affordable Digital Solutions</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #007bff; }
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; padding: 20px; }
+        header { background: #007bff; color: white; padding: 20px; font-size: 24px; }
+        section { max-width: 800px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #007bff; }
+        button { padding: 10px 20px; font-size: 16px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
     </style>
 </head>
 <body>
-    <h1>Welcome to Quickport!</h1>
-    <p>Your website is live and hosted for free on GitHub Pages.</p>
+    <header>Quickport - Affordable Digital Solutions</header>
+    
+    <section>
+        <h2>Welcome to Quickport</h2>
+        <p>We provide affordable digital services including app development and doorstep microservices.</p>
+    </section>
+    
+    <section>
+        <h2>Introducing ColonyMate App</h2>
+        <p>ColonyMate helps remote colonies track live vehicle updates. Future updates will include doorstep delivery, auto pickups, chat services, and more.</p>
+        <button onclick="alert('Coming Soon!')">Learn More</button>
+    </section>
+    
+    <section>
+        <h2>Contact Us</h2>
+        <p>Email: <strong>colonymate@quickport.co.in</strong></p>
+    </section>
+    
+    <section>
+        <h2>Request a Digital Service</h2>
+        <form action="https://formspree.io/f/xjkgzprv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="What digital service do you need?" required></textarea>
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </section>
 </body>
 </html>
